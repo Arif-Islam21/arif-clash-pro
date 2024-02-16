@@ -21,7 +21,7 @@
     >
       <!-- HOME SECTION STARTS HERE -->
       <section
-        class="text-center min-h-screen justify-center flex flex-col gap-4"
+        class="text-center hidden min-h-screen justify-center flex flex-col gap-4"
       >
         <div class="">
           <h1 class="text-8xl flex-nowrap font-bold">ALPHABET CLASH</h1>
@@ -30,10 +30,58 @@
         <button class="btn w-40 mx-auto">Play Now</button>
       </section>
       <!-- PLAYGROUND SECTION HERE -->
-      <section class="hidden">
+      <section class="text-black space-y-6 py-6 font-bold">
         <!-- artboard goes here -->
-        <div class="artboard mx-auto bg-red-500 artboard-horizontal phone-4">
+        <div
+          class="artboard mx-auto border-8 border-[#2f2941] bg-[#ffffffb3] rounded-lg artboard-horizontal phone-4"
+        >
           812×375
+        </div>
+
+        <!-- keyboard goes here -->
+        <div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">q</kbd>
+            <kbd class="kbd">w</kbd>
+            <kbd class="kbd">e</kbd>
+            <kbd class="kbd">r</kbd>
+            <kbd class="kbd">t</kbd>
+            <kbd class="kbd">y</kbd>
+            <kbd class="kbd">u</kbd>
+            <kbd class="kbd">i</kbd>
+            <kbd class="kbd">o</kbd>
+            <kbd class="kbd">p</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">a</kbd>
+            <kbd class="kbd">s</kbd>
+            <kbd class="kbd">d</kbd>
+            <kbd class="kbd">f</kbd>
+            <kbd class="kbd">g</kbd>
+            <kbd class="kbd">h</kbd>
+            <kbd class="kbd">j</kbd>
+            <kbd class="kbd">k</kbd>
+            <kbd class="kbd">l</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">z</kbd>
+            <kbd class="kbd">x</kbd>
+            <kbd class="kbd">c</kbd>
+            <kbd class="kbd">v</kbd>
+            <kbd class="kbd">b</kbd>
+            <kbd class="kbd">n</kbd>
+            <kbd class="kbd">m</kbd>
+            <kbd class="kbd">/</kbd>
+          </div>
+        </div>
+        <!-- buttons -->
+        <div class="flex justify-between w-3/4 mx-auto">
+          <button class="btn flex bg-purple-600 border-none text-white">
+            Life <img src="images/Group 23.svg" alt="" /> <span>1</span>
+          </button>
+          <button class="btn flex bg-purple-600 border-none text-white">
+            Score <img src="images/monetization_on.svg" alt="" /> <span>1</span>
+          </button>
         </div>
       </section>
       <!-- SCORE CARD SECTION HERE -->
