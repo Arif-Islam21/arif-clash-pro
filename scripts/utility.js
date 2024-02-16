@@ -21,10 +21,26 @@ function alphabateGenerator() {
 }
 
 // background color generator
-function backgroundColor(elementId) {
+function setBackgroundColor(elementId) {
+  const element = document.getElementById(displayElementAlpha());
+  element.classList.add("bg-purple-500");
+}
+function removeBackgroundColor(elementId) {
+  const element = document.getElementById(elementId);
+  element.classList.remove("bg-purple-500");
+}
+
+function displayElementAlpha() {
   const displayElement = document.getElementById("display-alpha");
   const displayText = displayElement.innerText;
   const display = displayText.toLowerCase();
-  const element = document.getElementById(display);
-  element.classList.add("bg-purple-500");
+  return display;
+}
+function startGame() {
+  showElementById("playground-section");
+  hideElementById("home-section");
+
+  const displayAlpha = document.getElementById("display-alpha");
+  displayAlpha.innerText = alphabateGenerator();
+  setBackgroundColor("display-alpha");
 }

@@ -1,8 +1,10 @@
 document.getElementById("play-now").addEventListener("click", function () {
-  showElementById("playground-section");
-  hideElementById("home-section");
+  startGame();
+});
 
-  const displayAlpha = document.getElementById("display-alpha");
-  displayAlpha.innerText = alphabateGenerator();
-  backgroundColor("display-alpha");
+document.addEventListener("keyup", function (e) {
+  if (e.key === displayElementAlpha()) {
+    startGame();
+    removeBackgroundColor(e.key);
+  }
 });
