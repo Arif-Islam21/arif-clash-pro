@@ -4,5 +4,5 @@ document.getElementById("play-now").addEventListener("click", function () {
 
   const displayAlpha = document.getElementById("display-alpha");
   displayAlpha.innerText = alphabateGenerator();
-  backgroundColor(alphabateGenerator());
+  backgroundColor("display-alpha");
 });

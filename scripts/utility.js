@@ -22,6 +22,10 @@ function alphabateGenerator() {
 
 // background color generator
 function backgroundColor(elementId) {
-  const element = document.getElementById(elementId);
+  const displayElement = document.getElementById("display-alpha");
+  const displayText = displayElement.innerText;
+  const display = displayText.toLowerCase();
+  console.log(elementText);
+
   element.classList.add("bg-purple-500");
 }
