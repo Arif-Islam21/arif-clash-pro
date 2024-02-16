@@ -25,7 +25,6 @@ function backgroundColor(elementId) {
   const displayElement = document.getElementById("display-alpha");
   const displayText = displayElement.innerText;
   const display = displayText.toLowerCase();
-  console.log(elementText);
-
+  const element = document.getElementById(display);
   element.classList.add("bg-purple-500");
 }
