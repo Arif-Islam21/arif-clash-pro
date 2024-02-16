@@ -1,5 +1,8 @@
 document.getElementById("play-now").addEventListener("click", function () {
   showElementById("playground-section");
   hideElementById("home-section");
-  alphabateGenerator();
+
+  const displayAlpha = document.getElementById("display-alpha");
+  displayAlpha.innerText = alphabateGenerator();
+  backgroundColor(alphabateGenerator());
 });

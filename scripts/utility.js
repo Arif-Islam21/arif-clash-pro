@@ -19,3 +19,9 @@ function alphabateGenerator() {
   const randomAlpha = alpha[random];
   return randomAlpha;
 }
+
+// background color generator
+function backgroundColor(elementId) {
+  const element = document.getElementById(elementId);
+  element.classList.add("bg-purple-500");
+}
