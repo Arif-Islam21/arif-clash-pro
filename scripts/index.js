@@ -14,6 +14,13 @@ document.addEventListener("keyup", function (e) {
     if (lifeValue === 0) {
       showElementById("score-card");
       hideElementById("playground-section");
+      const lastScore = document.getElementById("score-value");
+      const lastScoreValue = lastScore.innerText;
+      document.getElementById("your-score").innerText = lastScoreValue;
     }
   }
+});
+
+document.getElementById("play-again").addEventListener("click", function () {
+  startGame();
 });

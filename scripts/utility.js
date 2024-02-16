@@ -39,6 +39,7 @@ function displayElementAlpha() {
 function startGame() {
   showElementById("playground-section");
   hideElementById("home-section");
+  hideElementById("score-card");
 
   const displayAlpha = document.getElementById("display-alpha");
   displayAlpha.innerText = alphabateGenerator();
