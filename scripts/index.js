@@ -21,6 +21,10 @@ document.addEventListener("keyup", function (e) {
   }
 });
 
-document.getElementById("play-again").addEventListener("click", function () {
+document.getElementById("play-again").addEventListener("click", function (e) {
   startGame();
+
+  document.getElementById("life-value").innerText = 5;
+  document.getElementById("score-value").innerText = 0;
+  removeBackgroundColor(e.key);
 });
