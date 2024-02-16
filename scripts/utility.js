@@ -44,3 +44,12 @@ function startGame() {
   displayAlpha.innerText = alphabateGenerator();
   setBackgroundColor("display-alpha");
 }
+// set increment and decrement function
+function buttonValueIncrement(elementId) {
+  const scoreElement = document.getElementById(elementId);
+  const scoreText = scoreElement.innerText;
+  let scoreValue = parseInt(scoreText);
+  scoreValue = scoreValue + 1;
+  document.getElementById("score-value").innerText = scoreValue;
+  return scoreValue;
+}
