@@ -1,1 +1,4 @@
-console.log("hello world");
+document.getElementById("play-now").addEventListener("click", function () {
+  showElementById("playground-section");
+  hideElementById("home-section");
+});
