@@ -46,10 +46,20 @@ function startGame() {
 }
 // set increment and decrement function
 function buttonValueIncrement(elementId) {
-  const scoreElement = document.getElementById(elementId);
-  const scoreText = scoreElement.innerText;
-  let scoreValue = parseInt(scoreText);
+  let scoreValue = textToNumber(elementId);
   scoreValue = scoreValue + 1;
   document.getElementById("score-value").innerText = scoreValue;
-  return scoreValue;
+}
+
+function btnValueDecrement() {
+  let lifeValue = textToNumber("life-value");
+  lifeValue = lifeValue - 1;
+  document.getElementById("life-value").innerText = lifeValue;
+}
+
+function textToNumber(elementId) {
+  const lifeElement = document.getElementById(elementId);
+  const lifeText = lifeElement.innerText;
+  let lifeValue = parseInt(lifeText);
+  return lifeValue;
 }

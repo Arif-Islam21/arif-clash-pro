@@ -8,5 +8,12 @@ document.addEventListener("keyup", function (e) {
     removeBackgroundColor(e.key);
 
     buttonValueIncrement("score-value");
+  } else {
+    btnValueDecrement("life-value");
+    const lifeValue = textToNumber("life-value");
+    if (lifeValue === 0) {
+      showElementById("score-card");
+      hideElementById("playground-section");
+    }
   }
 });
