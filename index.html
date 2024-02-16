@@ -15,20 +15,27 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#1E1E1E] min-h-screen flex flex-col items-center text-white">
-    <main class="font-poppins min-h-screen bg-no-repeat">
+  <body class="bg-[#1E1E1E] min-h-screen text-white">
+    <main
+      class="font-poppins min-h-screen bg-center bg-[url(images/background.png)] bg-no-repeat"
+    >
       <!-- HOME SECTION STARTS HERE -->
-      <div
-        class="border-2 text-center min-h-screen justify-center flex flex-col gap-4"
+      <section
+        class="text-center min-h-screen justify-center flex flex-col gap-4"
       >
-        <div>
-          <h1 class="text-6xl flex-nowrap font-bold">ALPHABET CLASH</h1>
+        <div class="">
+          <h1 class="text-8xl flex-nowrap font-bold">ALPHABET CLASH</h1>
         </div>
         <p>Unleash Your Typing Speed With Arif Clash Pro</p>
-        <button class="btn">Play Now</button>
-      </div>
+        <button class="btn w-40 mx-auto">Play Now</button>
+      </section>
       <!-- PLAYGROUND SECTION HERE -->
-      <div class="hidden"></div>
+      <section class="hidden">
+        <!-- artboard goes here -->
+        <div class="artboard mx-auto bg-red-500 artboard-horizontal phone-4">
+          812×375
+        </div>
+      </section>
       <!-- SCORE CARD SECTION HERE -->
       <div class="hidden"></div>
     </main>
